@@ -41,5 +41,4 @@ const options = {
 
 const searchbtn = document.querySelector("#search-btn")
 searchbtn.addEventListener("click", search => { 
-    let arr = []
 })
