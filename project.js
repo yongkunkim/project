@@ -1,12 +1,12 @@
 const options = {
     method: 'GET',
     headers: {
-        accept: 'application/json',
-        Authorization: 'Bearer .eeyJhbGciOiJIUzI1NiJ9yJhdWQiOiI1ODk3ZTkzYmM0OGNjNmJhMmY1MTEyNzc1Y2JlMjY2NSIsInN1YiI6IjY1MmYyOWI5MGNiMzM1MTZmNzQ5NDFhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HpKFXvFfl0VaMBTtqd168I_GlNJPZs0eqAbWBYj0v5Q'
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ODk3ZTkzYmM0OGNjNmJhMmY1MTEyNzc1Y2JlMjY2NSIsInN1YiI6IjY1MmYyOWI5MGNiMzM1MTZmNzQ5NDFhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HpKFXvFfl0VaMBTtqd168I_GlNJPZs0eqAbWBYj0v5Q'
     }
-};
-
-fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+  };
+  
+  fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
     .then(response => response.json())
     .then(movies => {
         const cardlist = document.querySelector("#cardlist")
